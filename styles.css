@@ -1,0 +1,140 @@
+:root {
+
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    background:var(--pale-blue) url(/images/pattern-background-desktop.svg) no-repeat;
+}
+
+img{
+    width: 100%;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.card-main{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    width: 400px;
+    margin: 55px 30px;
+    border-radius: 0.8rem;    
+}
+
+.card-main .introductory figure img{
+    border-top-left-radius:0.8rem;
+    border-top-right-radius: 0.8rem;
+}
+
+.card-main .introductory h1{
+    text-align: center;
+    font-weight: 900;
+    margin-top: 25px;
+    margin-bottom: 22px;
+    color: var(--dark-blue);
+}
+
+.card-main .introductory p{
+    text-align: center;
+    padding:0 30px;
+    color: var(--desaturated-blue);
+    line-height: 1.7rem;
+}
+
+.card-main .pricing-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-radius: 0.6rem;
+    margin: 30px 0px;
+    background-color: var(--very-pale-blue);
+}
+
+.card-main .pricing-area img{
+    margin-right: 20px;
+}
+
+.card-main .pricing-area div{
+    margin-right: 60px;
+}
+
+.card-main .pricing-area div h5{
+    margin-bottom: 4px;
+    font-size: 14px;
+    color:var(--dark-blue);
+}
+
+.card-main .pricing-area div p{
+    color:var(--desaturated-blue);
+}
+
+.card-main .pricing-area a{
+    font-size: 16px;
+    font-weight: 700;
+    color:var(--bright-blue);
+}
+
+.card-main .pricing-area a:hover{
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.card-main .btns .button-payment{
+    padding:18px 75px;
+    color:white;
+    font-family: inherit;
+    font-weight: 700;
+    border-radius: 0.7rem;
+    box-shadow: 2px 2px 20px var(--desaturated-blue);
+    background-color: var(--bright-blue);
+}
+
+.card-main .btns .button-payment:hover{
+    opacity: 0.6;
+    cursor: pointer;    
+}
+
+.card-main .btns .button-cancel{
+    text-align: center;
+    font-weight: 700;
+    color: var(--desaturated-blue);
+    margin:30px 0;
+    opacity: 0.6;
+}
+
+.card-main .btns .button-cancel:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* Attributes */
+.attribution { 
+    font-size: 14px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
